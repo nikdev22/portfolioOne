@@ -9,4 +9,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use("/",indexRouter);
 
 
-app.listen(8080);
+app.listen(process.env.PORT, process.env.IP, ()=>{
+  console.log('server started');
+    
+  );
